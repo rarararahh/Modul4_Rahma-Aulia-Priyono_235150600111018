@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Formulir Pendaftaran Siswa Baru</h1>
+
+  <form onsubmit="alert('Data berhasil dikirim!'); return false;" enctype="multipart/form-data">
+    <table>
+      <tr>
+        <td><label for="nama">Nama Lengkap</label></td>
+        <td><input type="text" id="nama" name="nama" required></td>
+      </tr>
+      <tr>
+        <td><label for="alamat">Alamat</label></td>
+        <td><textarea id="alamat" name="alamat" required></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="tempat_lahir">Tempat Lahir</label></td>
+        <td><input type="text" id="tempat_lahir" name="tempat_lahir" required></td>
+      </tr>
+      <tr>
+        <td><label for="tgl_lahir">Tanggal Lahir</label></td>
+        <td><input type="date" id="tgl_lahir" name="tgl_lahir" required></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>
+          <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
+          <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Jurusan Pilihan</td>
+        <td>
+          <label><input type="checkbox" name="jurusan" value="IPA"> IPA</label>
+          <label><input type="checkbox" name="jurusan" value="IPS"> IPS</label>
+          <label><input type="checkbox" name="jurusan" value="TKJ"> TKJ</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="agama">Agama</label></td>
+        <td>
+          <select id="agama" name="agama" required>
+            <option value="">--Pilih--</option>
+            <option>Islam</option>
+            <option>Kristen</option>
+            <option>Katolik</option>
+            <option>Hindu</option>
+            <option>Buddha</option>
+            <option>Konghucu</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="nohp">No HP</label></td>
+        <td><input type="number" id="nohp" name="nohp" required></td>
+      </tr>
+      <tr>
+        <td><label for="foto">Foto Diri</label></td>
+        <td><input type="file" id="foto" name="foto" required></td>
+      </tr>
+      <tr>
+        <td><label for="sekolah">Pilih Sekolah</label></td>
+        <td>
+          <select id="sekolah" name="sekolah" required>
+            <option value="">--Pilih Sekolah--</option>
+            <option>SMA Negeri 1</option>
+            <option>SMK Informatika</option>
+            <option>MAN 2 Kota</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="form-buttons">
+          <button type="submit">Kirim</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <a href="index.html" target="_blank" class="back-link">Kembali ke Beranda</a>
+</body>
+</html>
